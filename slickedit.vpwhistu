@@ -1,0 +1,21 @@
+[Global]
+CurrentProject=
+[ProjectDates]
+mytime.vpj=20140702035634000
+[ActiveConfig]
+mytime.vpj=,Debug
+[TreeExpansion2]
+scroll:0
+[State]
+SCREEN: 1920 1080 349 57 1208 858 0 0 M 0 0 0 0 1424 680 0
+CWD: ../../c++-src
+FILEHIST: 3
+../HelloDemo/waiting
+../HelloDemo/HelloDemo.cpp
+mytime0
+TBCLASS: 0 0
+DEBUG: 0 0 0 0 3 0 gdb
+printf
+strcpy
+std::*
+DEBUG2: 0
