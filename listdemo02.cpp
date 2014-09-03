@@ -1,0 +1,26 @@
+#include <iostream>
+#include <list>
+
+using namespace std;
+
+int main(int argc, char const *argv[])
+{
+	list<char> coll;
+
+	for (char c = 'a'; c <= 'z'; ++c) {
+		coll.push_back(c);
+	}
+
+	for (auto& elem : coll) {
+		cout << elem << " ";
+	}
+	cout << endl;
+
+	while (!coll.empty()) {
+		cout << coll.front() << " ";
+		coll.pop_front();
+	}
+	cout << endl;
+
+	return 0;
+}
