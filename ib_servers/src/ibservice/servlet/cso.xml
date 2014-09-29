@@ -1,0 +1,96 @@
+﻿<?xml version="1.0" encoding="UTF-8"?>
+<!-- 
+	说明：
+		导入产品信息、处方信息
+ -->
+<config test="123">
+<!-- 数据库连接信息 -->
+	<connurl>
+		Driver={oracle};port=1521;server=localhost;uid=ta4_1;pwd=ta4_1;database=orcl
+	</connurl>
+	<source type="dirExcel" />
+	
+	<!-- 以前为js代码 -->
+	<code>
+		<![CDATA[
+			]]>
+	</code>
+	<steps>
+	 	<step startIndex="0" finishIndex="last" sheet="0">
+			<sql name="CSO">
+				 <![CDATA[
+				 	MODALITY=$C{stepIndex+1,0}# 
+				 	ACTIVITYDESCRIPTION=$C{stepIndex+1,1}#  
+				 	ACTIVITYOWNER=$C{stepIndex+1,2}#  
+				 	ACTIVITYDUEDATE=$C{stepIndex+1,3}#  
+				 	PRIORITY=$C{stepIndex+1,4}#  
+				 	AGE=$C{stepIndex+1,5}#  
+				 	MILESTONESTATUS=$C{stepIndex+1,6}#  
+				 	CURRENTMILESTONEAGE=$C{stepIndex+1,7}#  
+				 	CSONUMBER=$C{stepIndex+1,8}#  
+				 	CUSTOMERNAME=$C{stepIndex+1,9}# 
+				 	PROBLEMDESCRIPTION=$C{stepIndex+1,10}#  
+				 	T=$C{stepIndex+1,11}#  
+				 	OWNERNAME=$C{stepIndex+1,12}# 
+				 	 DOS=$C{stepIndex+1,13}#  
+				 	 IDORS_N=$C{stepIndex+1,14}# 
+				 	 PSIDESCRIPTION=$C{stepIndex+1,15}#  
+				 	 CUSTOMERTEMPERATURE=$C{stepIndex+1,16}#  
+				 	 POLE=$C{stepIndex+1,17}#  
+				 	 COUNTRY=$C{stepIndex+1,18}#  
+				 	 REGION=$C{stepIndex+1,19}#  
+				 	 LCT=$C{stepIndex+1,20}#  
+				 	 PARTNUMBER=$C{stepIndex+1,21}#  
+				 	 PARTORDERNUMBER=$C{stepIndex+1,22}#  
+				 	 PROMISEDT=$C{stepIndex+1,23}# 
+				 	  ACTSHIPDATE=$C{stepIndex+1,24}#  
+				 	 PQRPSRREQUIRED=$C{stepIndex+1,25}#  
+				 	 PQRPSRNUMBER=$C{stepIndex+1,26}#  
+				 	 ITERATION=$C{stepIndex+1,27}#  
+				 	 M1DAYSAGED=$C{stepIndex+1,28}# 
+					M2DAYSAGED=$C{stepIndex+1,29}#  
+					M3DAYSAGED=$C{stepIndex+1,30}#  
+					M4DAYSAGED=$C{stepIndex+1,31}#  
+					M5DAYSAGED=$C{stepIndex+1,32}#  
+					AGEING=$C{stepIndex+1,33}#  
+					GRP_NUMBER=$C{stepIndex+1,34}#  
+					LEADFSE=$C{stepIndex+1,35}#  
+					SUBMODALITY=$C{stepIndex+1,36}#  
+					SYSTEMSTATUS=$C{stepIndex+1,37}# 
+					 MAKECENTER=$C{stepIndex+1,38}#  
+					 PRODUCTINFORMATION=$C{stepIndex+1,39}#  
+					 LEVELS=$C{stepIndex+1,40}#  
+					 STATUS=$C{stepIndex+1,41}#  
+					 CSOOWNERSSO=$C{stepIndex+1,42}#  
+					 PRODUCT=$C{stepIndex+1,43}#  
+					 SRTYPE=$C{stepIndex+1,44}#  
+					 SERIALNUMBER=$C{stepIndex+1,45}#  
+					 SHIPTOSITEID=$C{stepIndex+1,46}#  
+					 PROBLEMTYPE=$C{stepIndex+1,47}#  
+					 SIEBELMODALITY=$C{stepIndex+1,48}#  
+					 MULTIPLESYSTEMSINVOLVED=$C{stepIndex+1,49}#  
+					 EXECUTIVEESCALATION=$C{stepIndex+1,50}#  
+					 LEGALENTITY=$C{stepIndex+1,51}#  
+					 WHODECLINEDPQRPSR=$C{stepIndex+1,52}#  
+					 SHIPTOCITY=$C{stepIndex+1,53}#  
+					 STATE=$C{stepIndex+1,54}#  
+					 ROOTCAUSEFAMILY=$C{stepIndex+1,55}#  
+					 ROOTCAUSEDESCRIPTION=$C{stepIndex+1,56}#  
+					 PSICODE=$C{stepIndex+1,57}#  
+					 OPERATINGUNIT=$C{stepIndex+1,58}#  
+					 CSOCREATOR=$C{stepIndex+1,59}#  
+					 SROPENDATE=$C{stepIndex+1,60}#  
+					 CSOSTARTDATE=$C{stepIndex+1,61}#  
+					 OLE=$C{stepIndex+1,62}#  
+					 COUNTRY_ZONE=$C{stepIndex+1,63}#  
+					 EMEAHCITMODALITY=$C{stepIndex+1,64}#  
+					 EMEAHCITSUBMODALITY=$C{stepIndex+1,65}#  
+					 LATESTUPDATE=$C{stepIndex+1,66}#  
+					 NEXTACTION=$C{stepIndex+1,67}#  
+					 ACTIONOWNER=$C{stepIndex+1,68}#  
+				 	COMMENTEDDATE=$C{stepIndex+1,69}# 
+				 ]]>
+			</sql>
+		</step>
+	</steps>
+</config>

@@ -3,7 +3,7 @@
 template <typename T1, typename T2>
 inline auto gt(T1 a, T2 b) -> decltype(a + b);
 
-int main(int argc, char const *argv[])
+int main()
 {
 	using namespace std;
 
